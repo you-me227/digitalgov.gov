@@ -1,0 +1,6 @@
+{{- $form := index $.Site.Data.workflow.posts.blocks -}}
+{{- range $block := $form -}}
+
+  {{- partial (printf "workflow/blocks/%s" $block.type) (dict "Section" . "Page" $ "Block" $block ) -}}
+
+{{- end -}}
