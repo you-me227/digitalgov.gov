@@ -1,0 +1,47 @@
+name: Blog Post
+id: posts
+page-title: posts
+description: a blog post template
+base_field: title
+blocks:
+- id: source_url
+  name: Source Url
+  type: input
+  data_type: string
+  txt: "e.g. https://18f.gsa.gov/2019/04/01/ ..."
+  comment: "originally published at the following URL"
+- id: source
+  name: Source Website
+  type: select
+  data_type: data
+  txt: "If you don't see a site here, we can add it."
+  comment: "Which team published this?\n# Learn about sources at https://workflow.digital.gov/sources"
+- id: filename-dated
+  name: Filename
+  type: input-hidden
+  data_type: data
+  txt: ""
+- id: slug
+  name: Slug
+  type: input-hidden
+  data_type: data
+  txt: ""
+- id: date
+  name: Date
+  type: input
+  data_type: data
+  txt: "e.g. 2019-04-01 13:24"
+- id: time
+  name: Time
+  type: input-hidden
+  data_type: skip
+- id: kicker
+  name: Kicker
+  type: input
+  data_type: string
+  txt: "Super Short, like one word"
+- id: title
+  name: Title / Headline
+  type: input
+  data_type: string
+  txt: "Short, topical, no acronyms."
