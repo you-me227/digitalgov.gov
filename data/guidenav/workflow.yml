@@ -1,0 +1,15 @@
+nav:
+- title    : 'Overview'
+  href     : '/guides/workflow/'
+- title  : 'Getting Started'
+  href   : '/guides/workflow/getting-started/'
+  subnav   :
+  - title  : 'Three Easy Tasks'
+    href   : '/guides/workflow/getting-started/basics/three-easy-tasks/'
+  - title  : 'Example Subnav'
+    href   : '/guides/workflow/getting-started/example-subnav/'
+    subnav   :
+    - title  : 'Example Page'
+      href   : '/guides/workflow/getting-started/example-subnav/example-page/'
+- title    : 'Posts'
+  href     : '/guides/workflow/posts/'
