@@ -1,16 +1,6 @@
 nav:
 - title    : 'Overview'
   href     : '/guides/website-standards/'
-- title  : 'Getting Started'
-  href   : '/guides/website-standards/getting-started/'
-  subnav   :
-  - title  : 'Three Easy Tasks'
-    href   : '/guides/website-standards/getting-started/basics/three-easy-tasks/'
-  - title  : 'Example Subnav'
-    href   : '/guides/website-standards/getting-started/example-subnav/'
-    subnav   :
-    - title  : 'Example Page'
-      href   : '/guides/website-standards/getting-started/example-subnav/example-page/'
 - title    : 'Design Principles'
   href     : '/guides/website-standards/design-principles/'
   subnav   :
