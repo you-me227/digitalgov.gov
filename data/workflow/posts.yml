@@ -11,7 +11,7 @@ blocks:
   txt: "e.g. https://18f.gsa.gov/2019/04/01/ ..."
   comment: "originally published at the following URL"
 - id: source
-  name: Source Website
+  name: Source / Website
   type: select
   data_type: data
   txt: "If you don't see a site here, we can add it."
@@ -45,3 +45,47 @@ blocks:
   type: input
   data_type: string
   txt: "Short, topical, no acronyms."
+- id: deck
+  name: Deck / Sub-head
+  type: textarea
+  data_type: string
+  txt: "Think of this as the sentence you'd most like to tweet. Do not repeat the headline. You need to be able to read it outloud in a single breath."
+- id: summary
+  name: Summary
+  type: textarea
+  data_type: string
+  txt: "1-sentence description that does not repeat the headline"
+- id: topics
+  name: Topics
+  type: select-multiple
+  data_type: data
+  txt: "see all topics at https://digital.gov/topics"
+  comment: "see all topics at https://digital.gov/topics"
+- id: authors
+  name: Authors
+  type: select-multiple
+  data_type: data
+  txt: "see all authors at https://digital.gov/authors"
+  comment: "see all authors at https://digital.gov/authors"
+- id: primary_image
+  name: Primary Image (for social media)
+  type: input
+  data_type: string
+  txt: "Accepts the image slug without extension, e.g. <code>filename-goes-here</code><br/>Upload images here: URLGOESHERE"
+  comment: "primary Image (for social media)"
+- id: weight
+  name: Page Weight
+  type: select-number
+  options:
+    - blank
+    - 0
+    - 1
+  data_type: integer
+  txt: "Controls how this page appears across the site<br/>0 -- hidden<br/>1 -- visible"
+  comment: "Page weight: controls how this page appears across the site\n# 0 -- hidden\n# 1 -- visible"
+- id: aliases
+  name: Redirects
+  type: textarea
+  data_type: data
+  txt: "Redirects: enter the path of the URL that you want redirected to this page</br>Note: add two spaces, a dash, and another space before each path"
+  comment: "Redirects: enter the path of the URL that you want redirected to this page"

@@ -1,7 +1,1 @@
---- hidden {{ .Block.name -}} ---
-<div class="block block-{{- .Block.id -}}">
-  <label class="usa-label" for="block-{{- .Block.id -}}">
-    {{- .Block.name -}}
-  </label>
-  <input type="hidden" class="usa-input" name="block-{{- .Block.id -}}" {{- if .Block.value -}}value="{{- .Block.value -}}"{{- end -}} data-block="{{- .Block.id -}}" data-block-data_type="{{- .Block.data_type -}}" data-block-comment="{{- .Block.comment | markdownify -}}">
-</div>
+<input type="hidden" class="usa-input" name="block-{{- .Block.id -}}" {{- if .Block.value -}}value="{{- .Block.value -}}"{{- end -}} data-block="{{- .Block.id -}}" data-block-data_type="{{- .Block.data_type -}}" data-block-comment="{{- .Block.comment | markdownify -}}">

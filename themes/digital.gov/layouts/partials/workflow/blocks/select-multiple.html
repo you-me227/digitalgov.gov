@@ -1,7 +1,2 @@
-<div class="block block-{{- .Block.id -}}">
-  <label class="usa-label" for="block-{{- .Block.id -}}">
-    {{- .Block.name -}}
-  </label>
-  <input class="usa-input" name="block-{{- .Block.id -}}" {{- if .Block.value -}}value="{{- .Block.value -}}"{{- end -}} data-block="{{- .Block.id -}}" data-block-data_type="{{- .Block.data_type -}}" data-block-comment="{{- .Block.comment | markdownify -}}">
-  <p class="">{{- .Block.text | markdownify -}}</p>
-</div>
+<select multiple="multiple" class="usa-select" data-block="{{- .Block.id -}}" data-block-data_type="{{- .Block.data_type -}}" data-block-comment="{{- .Block.comment | markdownify -}}"></select>
+<p class="">{{- .Block.text | markdownify -}}</p>

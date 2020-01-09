@@ -1,6 +1,15 @@
 {{- $form := index $.Site.Data.workflow.posts.blocks -}}
 {{- range $block := $form -}}
 
+<div class="block block-{{- $block.id -}}">
+  <label class="usa-label" for="block-{{- $block.id -}}">
+    {{- $block.name -}}
+  </label>
+
+  <!-- Block — for including the field types in the form -->
   {{- partial (printf "workflow/blocks/%s" $block.type) (dict "Section" . "Page" $ "Block" $block ) -}}
+
+  <p class="">{{- $block.text | markdownify -}}</p>
+</div>
 
 {{- end -}}
