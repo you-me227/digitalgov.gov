@@ -16,7 +16,6 @@
         <div class="grid-col-12 tablet-lg:grid-col-8">
           <div class="guide-content usa-layout-docs__main usa-prose" data-edit-this="/edit/{{- .Type -}}/?page=https://digital.gov{{- (urls.Parse .Permalink).Path -}}">
 
-            EDITOR
             {{- partial "core/guides/guide-page-head" . -}}
 
             {{/*
@@ -27,8 +26,7 @@
               {{- partial "core/guides/guide-toc" . -}}
             {{- end -}}
 
-            <form autocomplete="off" id="posts" class="" accept-charset="utf-8" data-content_type="posts" data-base_field="title">
-
+            <!-- Form Builder -->
             {{- partial "workflow/form-builder" . -}}
 
             {{ .Content }}

@@ -1,0 +1,6 @@
+<fieldset class="usa-fieldset">
+  <div class="usa-checkbox">
+    <input class="usa-checkbox__input" id="{{- .Block.id -}}" type="checkbox" name="{{- .Block.id -}}" {{- if .Block.value -}}value="{{- .Block.value -}}"{{- end -}} data-block="{{- .Block.id -}}" data-block-data_type="{{- .Block.data_type -}}" data-block-comment="{{- .Block.comment | markdownify -}}">
+    <label class="usa-checkbox__label" for="{{- .Block.id -}}">{{- .Block.name -}}</label>
+  </div>
+</fieldset>

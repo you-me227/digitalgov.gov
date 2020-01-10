@@ -1,0 +1,16 @@
+<div id="card_display" class="block block-{{- .Block.id -}}">
+  <label class="usa-label" for="block-{{- .Block.id -}}">
+    Where will this page be published?
+  </label>
+  <fieldset class="usa-fieldset">
+    <legend class="usa-sr-only">Where does this page live?</legend>
+    <div class="usa-radio">
+      <input class="usa-radio__input" id="card_display_dg" type="radio" name="card_display" value="card_display_dg" checked>
+      <label class="usa-radio__label" for="card_display_dg">This will be a new {{ .Block.content_type }} page on Digital.gov</label>
+    </div>
+    <div class="usa-radio">
+      <input class="usa-radio__input" id="card_display_elsewhere" name="card_display" type="radio" value="card_display_elsewhere">
+      <label class="usa-radio__label" for="card_display_elsewhere">This entry will point to a separate website/URL</label>
+    </div>
+  </fieldset>
+</div>
