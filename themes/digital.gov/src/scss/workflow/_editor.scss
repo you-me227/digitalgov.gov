@@ -1,7 +1,18 @@
 
 #workflow-posts{
-	// @include u-bg('red-10');
+
+	.usa-label{
+		@include u-text('base-darker');
+		@include u-font('sans', 'xs');
+	}
 	.usa-input{
 		@include u-radius('sm');
+		@include u-border-color('base-light');
+
+	}
+	.txt{
+		@include u-margin-top('05');
+		@include u-font('sans', '3xs');
+		@include u-text('base-dark');
 	}
 }
