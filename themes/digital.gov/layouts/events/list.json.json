@@ -81,6 +81,8 @@
       "registration_url" : "{{- .Params.registration_url -}}",
       {{- end -}}
 
+      {{- partial "api/captions" . -}}
+
       {{- partial "api/youtube_id" . -}}
 
       {{- if (isset .Params "zoom_id") -}}
@@ -157,9 +159,9 @@
         {{- end -}}
       },
       {{- end -}}
-      {{- if .Slug -}}
-      "slug" : "{{ .Slug }}",
-      {{- end -}}
+
+      {{- partial "api/slug" . -}}
+      
       "url" : "{{- .Permalink -}}"
     }{{- if ne (add $index 1) $length -}},{{- end -}}
     {{- end -}}
