@@ -141,6 +141,9 @@
 
   {{ "<!-- CSS -->" | safeHTML }}
   <link rel="stylesheet" href='{{- "dist/styles.css" | absURL -}}' type="text/css" media='all' />
+  {{ if eq .Params.guide "workflow" -}}
+  <link rel="stylesheet" href='{{- "dist/workflow.css" | absURL -}}' type="text/css" media='all' />
+  {{- end }}
   <script src="https://kit.fontawesome.com/dbf359f887.js"></script>
 
 
