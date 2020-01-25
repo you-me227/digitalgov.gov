@@ -41,6 +41,7 @@ const USWDS_SRC  = './themes/digital.gov/src/scss/uswds';
 
 // Project Sass source directory
 const PROJECT_SASS_SRC  = './themes/digital.gov/src/scss/new';
+const WORKFLOW_SASS_SRC  = './themes/digital.gov/src/scss/workflow';
 
 // Project JS source directory
 const PROJECT_JS_SRC  = './themes/digital.gov/src/js';
@@ -98,7 +99,8 @@ gulp.task('build-sass', function(done) {
     cssnano(({ autoprefixer: { browsers: autoprefixerOptions }}))
   ];
   return gulp.src([
-      `${PROJECT_SASS_SRC}/**/*.scss`
+      `${PROJECT_SASS_SRC}/**/*.scss`,
+      `${WORKFLOW_SASS_SRC}/**/*.scss`
     ])
     .pipe(sourcemaps.init({ largeFile: true }))
     .pipe(sass({
