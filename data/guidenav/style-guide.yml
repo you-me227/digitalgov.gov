@@ -1,0 +1,18 @@
+nav:
+- title    : 'Overview'
+  href     : '/guides/style-guide/'
+- title  : 'Getting Started'
+  href   : '/guides/style-guide/getting-started/'
+  subnav   :
+  - title  : 'Three Easy Tasks'
+    href   : '/guides/style-guide/getting-started/basics/three-easy-tasks/'
+  - title  : 'Example Subnav'
+    href   : '/guides/style-guide/getting-started/example-subnav/'
+    subnav   :
+    - title  : 'Example Page'
+      href   : '/guides/style-guide/getting-started/example-subnav/example-page/'
+- title    : 'Workflow'
+  href     : '/guides/style-guide/workflow/'
+  subnav   :
+  - title  : 'Posts'
+    href   : '/guides/style-guide/workflow/posts/'

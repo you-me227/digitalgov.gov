@@ -1,11 +1,10 @@
 ---
 date: 2019-11-01 3:00:00 -0400
-title: "Posts"
+title: "Workflow"
 summary: ""
 deck: "TKTK"
 primary_image:
-guide: workflow
-layout: editor
+guide: style-guide
 
 ---
 
