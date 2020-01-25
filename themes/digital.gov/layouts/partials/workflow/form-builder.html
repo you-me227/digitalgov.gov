@@ -1,12 +1,12 @@
 {{- $form := index $.Site.Data.workflow.posts.blocks -}}
-<form autocomplete="off" id="posts" class="" accept-charset="utf-8" data-content_type="posts" data-base_field="title">
+<form autocomplete="off" id="workflow-posts" class="" accept-charset="utf-8" data-content_type="posts" data-base_field="title">
   {{- range $block := $form -}}
 
   <div class="block block-{{- $block.id -}}">
     <label class="usa-label" for="block-{{- $block.id -}}">
       {{- $block.name -}}
     </label>
-
+    
     <!-- Block — for including the field types in the form -->
     {{- partial (printf "workflow/blocks/%s" $block.type) (dict "Section" . "Page" $ "Block" $block ) -}}
 
