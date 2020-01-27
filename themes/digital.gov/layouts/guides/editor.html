@@ -13,7 +13,7 @@
           {{- partial "core/guides/guide-nav" . -}}
         </div>
 
-        <div class="grid-col-12 tablet-lg:grid-col-8">
+        <div class="grid-col-12 tablet-lg:grid-col-9">
           <div class="guide-content usa-layout-docs__main usa-prose" data-edit-this="/edit/{{- .Type -}}/?page=https://digital.gov{{- (urls.Parse .Permalink).Path -}}">
 
             {{- partial "core/guides/guide-page-head" . -}}
@@ -26,20 +26,29 @@
               {{- partial "core/guides/guide-toc" . -}}
             {{- end -}}
 
-            <!-- Form Builder -->
-            {{- partial "workflow/form-builder" . -}}
-
             {{ .Content }}
 
-            <section>
-              <pre id="filename" class="">---</pre>
-              <pre id="post-matter">---</pre>
-            </section>
+            <div class="grid-row grid-gap-4">
+              <div class="grid-col-12 tablet-lg:grid-col-6">
+                <!-- Form Builder -->
+                {{- partial "workflow/form-builder" . -}}
+              </div>
+              <div class="grid-col-12 tablet-lg:grid-col-6">
+                <section>
+                  <pre id="filename" class="">---</pre>
+                  <pre id="post-matter">---</pre>
+                </section>
+              </div>
+            </div>
 
-            <h2>Editor</h2>
-            <textarea name="name" id="editor" rows="8" cols="80"></textarea>
+            <div class="grid-row">
+              <div class="grid-col-12">
+                <h2>Editor</h2>
+                <textarea name="name" id="editor" rows="8" cols="80"></textarea>
 
-            <a id="new_file" target="_blank" href="#" class=""><i class="fab fa-github"></i> Create a new file</a>
+                <a id="new_file" target="_blank" href="#" class=""><i class="fab fa-github"></i> Create a new file</a>
+              </div>
+            </div>
 
           </div>
 

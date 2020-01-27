@@ -8,5 +8,3 @@ guide: style-guide
 layout: editor
 
 ---
-
-text
