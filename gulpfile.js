@@ -25,6 +25,6 @@ gulp.task('watch-assets', function () {
   gulp.watch('./themes/digital.gov/src/js/**/*.js', gulp.series('compile'));
 });
 
-gulp.task('watch', gulp.series('build-sass', 'compile', 'watch-assets'));
+gulp.task('watch', gulp.series('build-sass', 'compile', 'simplemde-css', 'simplemde-js', 'watch-assets'));
 
 gulp.task('default', gulp.series('watch'));
