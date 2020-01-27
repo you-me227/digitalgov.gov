@@ -58,8 +58,10 @@
 
 <script src='{{ "dist/jquery.min.js" | absURL }}'></script>
 <script src='{{ "dist/uswds.min.js" | absURL }}'></script>
+{{ if eq .Params.guide "style-guide" -}}
+<script src='{{ "dist/simplemde.min.js" | absURL }}'></script>
+{{ end }}
 <script src='{{ "dist/base.js" | absURL }}'></script>
-
 {{/* Add to Calendar JS */}}
 {{- partial "core/addtocalendar-js" . -}}
 
