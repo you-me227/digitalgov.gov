@@ -121,6 +121,11 @@ gulp.task('build-sass', function(done) {
     .pipe(gulp.dest(`${CSS_DEST}`));
 });
 
+gulp.task('simplemde-css', function (done) {
+  return gulp.src('node_modules/simplemde/dist/simplemde.min.css')
+  .pipe(gulp.dest('./themes/digital.gov/static/dist/'));
+});
+
 gulp.task('init', gulp.series(
   'copy-uswds-setup',
   'copy-uswds-fonts',

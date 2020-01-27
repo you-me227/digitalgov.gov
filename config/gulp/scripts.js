@@ -13,6 +13,11 @@ gulp.task('compile', function (done) {
   .pipe(gulp.dest('./themes/digital.gov/static/dist'));
 });
 
+gulp.task('simplemde-js', function (done) {
+  return gulp.src('node_modules/simplemde/dist/simplemde.min.js')
+  .pipe(gulp.dest('./themes/digital.gov/static/dist/'));
+});
+
 const JQUERY_PATH = 'node_modules/jquery/dist/jquery.min.js';
 
 gulp.task('copy-jquery', () => {
