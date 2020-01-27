@@ -423,8 +423,6 @@ function labnolIframe() {
 var content_type = $('#workflow-posts').data('content_type');
 var base_field = $('#workflow-posts').data('base_field');
 
-console.log('blocks');
-console.log(base_field);
 // NEW date
 // var date = new Date();
 
@@ -505,9 +503,14 @@ function update_matter(){
 	});
   post_matter += "\n\n# Make it better ♥\n";
   post_matter += "---";
+  post_matter += "\n\n\n";
+  var post_content = simplemde.value();
+
+  var post_file_contents = post_matter;
+  post_file_contents += post_content;
 
   $("#post-matter").html(post_matter);
-  var github_path = github_base + get_github_url(post_matter);
+  var github_path = github_base + get_github_url(post_file_contents);
   $("#new_file").attr('href', github_path);
 }
 
@@ -840,3 +843,23 @@ jQuery(document).ready(function ($) {
   });
 
 });
+
+var simplemde = new SimpleMDE({
+  autosave: {
+		enabled: false,
+		uniqueId: "MyUniqueID", // This needs to be a unique ID
+		delay: 1000,
+	},
+  element: $("#editor")[0],
+  insertTexts: {
+		horizontalRule: ["", "\n\n-----\n\n"],
+		image: ["![](http://", ")"],
+		link: ["[", "](http://)"],
+		table: ["", "\n\n| Column 1 | Column 2 | Column 3 |\n| -------- | -------- | -------- |\n| Text     | Text      | Text     |\n\n"],
+	},
+  promptURLs: true,
+  toolbar: ["bold", "italic", "quote", "|", "heading-2", "heading-3", "|", "unordered-list", "ordered-list", "code", "table", "|", "preview", "side-by-side", "fullscreen", "guide"]
+});
+
+// const pos = simplemde.codemirror.getCursor();
+// simplemde.codemirror.replaceRange(post_matter, pos);

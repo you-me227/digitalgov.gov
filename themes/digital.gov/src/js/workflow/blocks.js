@@ -1,8 +1,6 @@
 var content_type = $('#workflow-posts').data('content_type');
 var base_field = $('#workflow-posts').data('base_field');
 
-console.log('blocks');
-console.log(base_field);
 // NEW date
 // var date = new Date();
 
@@ -83,9 +81,14 @@ function update_matter(){
 	});
   post_matter += "\n\n# Make it better ♥\n";
   post_matter += "---";
+  post_matter += "\n\n\n";
+  var post_content = simplemde.value();
+
+  var post_file_contents = post_matter;
+  post_file_contents += post_content;
 
   $("#post-matter").html(post_matter);
-  var github_path = github_base + get_github_url(post_matter);
+  var github_path = github_base + get_github_url(post_file_contents);
   $("#new_file").attr('href', github_path);
 }
 
