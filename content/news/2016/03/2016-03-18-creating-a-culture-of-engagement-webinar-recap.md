@@ -134,8 +134,7 @@ Kristin—Focus on their future vision, looking a decade ahead to imagine what t
 
 You can [view the presentation slides](https://s3.amazonaws.com/digitalgov/_legacy-img/2016/03/Employee-Engagement-FINAL-FINAL-2_25_16.pptx) (PPT, 3.4 MB, 20 slides) or watch the webinar in its entirety to learn more about this topic.
 
-[youtube=http://www.youtube.com/watch?v=THvdtQQURZ0&w=600]
-
+{{< youtube THvdtQQURZ0 >}} 
 
 
 For more content like this, [join the Customer Experience Community (CX-COP)]({{< ref "customer-experience-community.md" >}}).
