@@ -7,8 +7,7 @@ deck: "Learn how to improve the user experience of your website by following the
 summary: ""
 host: "David Fern"
 event_organizer: "Digital.gov"
-registration_url: 
-captions: 
+The presentation deck will be available on Monday, March 23rd.
 
 # start date
 date: 2020-02-25 15:00:00 -0500
