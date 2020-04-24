@@ -25,11 +25,11 @@ topics:
 authors: 
   - brian-fox
 
-# Event platform (zoom, youtube_live, adobe_connect)
+# Event platform (zoom, youtube_live, adobe_connect, google)
 event_platform: zoom
 
 # YouTube ID
-youtube_id: 
+youtube_id: 2sOwbF7azGA
 
 # Make it better ♥
 
