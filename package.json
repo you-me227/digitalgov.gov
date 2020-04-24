@@ -6,9 +6,10 @@
   "scripts": {
     "set-env": "gulp set-env",
     "local-build": "gulp build-assets && gulp watch",
+    "workflow": "npx netlify-cms-proxy-server",
     "hugo": "hugo serve",
     "federalist": "gulp build-assets",
-    "start": "npm-run-all --parallel set-env local-build hugo",
+    "start": "npm-run-all --parallel set-env local-build hugo workflow",
     "test:pa11y": "pa11y-ci --config .pa11yci"
   },
   "directories": {
