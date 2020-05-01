@@ -12,7 +12,7 @@ authors:
   - jeremyzilar
 topics:
   - product-management
-  - pra
+  - paperwork-reduction-act
   - policy
 
 featured_image:
