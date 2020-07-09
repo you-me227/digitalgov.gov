@@ -8,7 +8,7 @@ summary: "In this online event, PLAIN co-chairs will provide a recap of internat
 host: "Plain Language Community of Practice"
 event_organizer: "DigitalGov University"
 registration_url: https://www.eventbrite.com/e/an-around-the-world-recap-plain-monthly-meeting-registration-38539458558
-captions: 
+captions:
 
 # start date
 date: 2017-10-11 14:00:00 -0500
@@ -17,12 +17,12 @@ date: 2017-10-11 14:00:00 -0500
 end_date: 2017-10-11 15:00:00 -0500
 
 # see all topics at https://digital.gov/topics
-topics: 
+topics:
   - plain-language
   - plain-language-community-of-practice
 
 # see all authors at https://digital.gov/authors
-authors: 
+authors:
   - katherine-spivey
   - jthalls
 
@@ -33,7 +33,7 @@ event_platform: youtube_live
 youtube_id: 3FKyVeipMss
 
 # Redirects: enter the path of the URL that you want redirected to this page
-aliases: 
+aliases:
   - /event/online-an-around-the-world-recap-plain-monthly-meeting/
 
 # Make it better ♥
